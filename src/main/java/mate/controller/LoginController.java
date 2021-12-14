@@ -1,16 +1,15 @@
 package mate.controller;
 
-import mate.exception.AuthenticationException;
-import mate.lib.Injector;
-import mate.model.Driver;
-import mate.service.AuthenticationService;
-
+import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.IOException;
+import mate.exception.AuthenticationException;
+import mate.lib.Injector;
+import mate.model.Driver;
+import mate.service.AuthenticationService;
 
 public class LoginController extends HttpServlet {
     private static final String DRIVER_ID = "driver_id";
@@ -22,7 +21,7 @@ public class LoginController extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        req.getRequestDispatcher(JSP_PATH).forward(req,resp);
+        req.getRequestDispatcher(JSP_PATH).forward(req, resp);
     }
 
     @Override
@@ -37,7 +36,7 @@ public class LoginController extends HttpServlet {
             resp.sendRedirect("/index");
         } catch (AuthenticationException e) {
             req.setAttribute("errorMsg", e.getMessage());
-            req.getRequestDispatcher(JSP_PATH).forward(req,resp);
+            req.getRequestDispatcher(JSP_PATH).forward(req, resp);
         }
     }
 }
