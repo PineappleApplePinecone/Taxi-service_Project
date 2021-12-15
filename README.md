@@ -1,7 +1,7 @@
-###Taxi Service Project
+### Taxi Service Project
 This is a web app that has several options in web-browser 
 to work with Database of drivers, cars and manufacturers
-####With this app you can:
+#### With this app you can:
 1. Without registration:
 * Watch registration page
 * Watch add/drivers page
@@ -30,7 +30,6 @@ You can find needed dependencies in pom.xml file
 * Maven
 * Maven Checkstyle Plugin
 * HTML, CSS
-
 ### Recommendations for setup
 1. Configure Apache Tomcat for your IDE
 2. Install MySQL and MySQL Workbench or use terminal
