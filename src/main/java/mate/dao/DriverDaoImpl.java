@@ -117,7 +117,6 @@ public class DriverDaoImpl implements DriverDao {
             return deleteDriverStatement.executeUpdate() > 0;
         } catch (SQLException e) {
             throw new DataProcessingException("Couldn't delete driver with id " + id, e);
-
         }
     }
 
