@@ -1,7 +1,7 @@
-#Taxi Service Project
+###Taxi Service Project
 This is a web app that has several options in web-browser 
 to work with Database of drivers, cars and manufacturers
-With this app you can:
+####With this app you can:
 1. Without registration:
 * Watch registration page
 * Watch add/drivers page
@@ -12,8 +12,8 @@ With this app you can:
 * Delete cars, drivers and manufacturers
 * Track all available cars and working drivers
 * Track your cars as a driver
-### Structure for future deployment
-Project base on 3-layered architecture:
+### Structure of a projectt
+Project based on 3-layered architecture for future deployment:
 1. Data access layer (DAO)
 2. Application layer (service)
 3. Presentation layer (controllers)
@@ -31,7 +31,7 @@ You can find needed dependencies in pom.xml file
 * Maven Checkstyle Plugin
 * HTML, CSS
 
-### Recommendation for setup
+### Recommendations for setup
 1. Configure Apache Tomcat for your IDE
 2. Install MySQL and MySQL Workbench or use terminal
 3. Register new user in MySQL Connections
@@ -39,4 +39,3 @@ You can find needed dependencies in pom.xml file
 5. In the /util/ConnectionUtil.java fill the URL, USERNAME and PASSWORD with your user properties that you have created earlier
 6. Also, In the log4j2.xml change fileName path with the absolute path to file if you wish
 7. You are ready to use the app
-8. 
