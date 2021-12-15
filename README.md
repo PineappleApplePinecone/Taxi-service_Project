@@ -39,3 +39,4 @@ You can find needed dependencies in pom.xml file
 5. In the /util/ConnectionUtil.java fill the URL, USERNAME and PASSWORD with your user properties that you have created earlier
 6. Also, In the log4j2.xml change fileName path with the absolute path to file if you wish
 7. You are ready to use the app
+8. 
