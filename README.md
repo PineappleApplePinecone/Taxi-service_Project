@@ -3,8 +3,8 @@ This is a web app that has several options in web-browser
 to work with Database of drivers, cars and manufacturers
 #### With this app you can:
 1. Without registration:
-* Registration page view
-* Add/drivers page view
+* Login
+* Register new driver
 2. With registration:
 * Register new drivers
 * Add drivers to cars
