@@ -6,11 +6,10 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class ConnectionUtil {
-    private static final String URL = "jdbc:mysql://localhost:3306/taxi";
+    private static final String URL = "YOUR URL AND TIME ZONE";
     private static final String USERNAME = "YOUR_USERNAME";
     private static final String PASSWORD = "YOUR_PASSWORD";
     private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    private static final String TIME_ZONE = "?useUnicode=true&serverTimezone=UTC";
 
     static {
         try {
@@ -25,7 +24,7 @@ public class ConnectionUtil {
         dbProperties.setProperty("user", USERNAME);
         dbProperties.setProperty("password", PASSWORD);
         try {
-            return DriverManager.getConnection(URL + TIME_ZONE, dbProperties);
+            return DriverManager.getConnection(URL, dbProperties);
         } catch (SQLException e) {
             throw new RuntimeException("Can't create connection to DB ", e);
         }
